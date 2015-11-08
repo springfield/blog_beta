@@ -25,6 +25,7 @@ gem 'omniauth'
 gem 'devise_token_auth'
 gem 'angular_rails_csrf'
 gem 'active_model_serializers'
+gem 'clockwork', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
