@@ -3,7 +3,7 @@ describe('service post', function() {
 
 	it('returns object with methods', inject(function(Posts) {
 		expect(Posts).toEqual(jasmine.any(Object));
-		expect(Posts.all).toBeDefined()
-		expect(Posts.post).toBeDefined()
+		expect(Posts.all).toBeDefined();
+		expect(Posts.post).toBeDefined();
 	}));
 });
