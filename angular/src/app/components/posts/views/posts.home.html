@@ -1,0 +1,8 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+    <posts-list posts="ctrl.posts"></posts-list>
+  </div>
+  <div class="col-md-3" ng-if="ctrl.user.nickname != undefined">
+  	<a href="#" ui-sref="posts.new" class="btn btn-success">New post</a>
+  </div>
+</div>

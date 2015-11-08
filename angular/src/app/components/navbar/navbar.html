@@ -1,0 +1,29 @@
+<nav class="navbar navbar-static-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="home">
+        <span class="glyphicon glyphicon-home"></span> Blog
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <form class="navbar-form navbar-right" ng-if="ctrl.user.nickname == undefined" ng-submit="ctrl.login(user)" ng-init="user= {}">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email" ng-model="user.email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" ng-model="user.password">
+        </div>
+        <button type="submit" class="btn btn-default">Log in</button>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right" ng-if="ctrl.user.nickname != undefined">
+        <li class="navbar-text">
+          {{ctrl.user.nickname}}
+        </li>
+        <li>
+          <a href="#" ng-click="ctrl.signout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
