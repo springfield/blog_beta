@@ -2,7 +2,8 @@
   "name": "angular",
   "version": "0.0.0",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "postinstall": "cd angular && bower install --config.interactive=false && gulp build"
   },
   "dependencies": {
     "estraverse": "~4.1.0",
